@@ -22,6 +22,17 @@ export class MenuPage implements OnInit {
     this.carpetaMenu.unshift(nuevaCarpeta);
   }
 
+  eliminarCarpeta(indice) {
+    let index = this.carpetaMenu.indexOf(indice);
+
+    console.log('Este es el indice: '+indice);
+
+    if (index > -1) {
+      this.carpetaMenu.splice(index, 1);
+    }
+
+  }
+
   async presentAlertPrompt() {
     const alert = await this.alertCtrl.create({
       header: 'Crear nueva carpeta',
