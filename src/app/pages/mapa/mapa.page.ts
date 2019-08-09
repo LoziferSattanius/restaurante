@@ -9,10 +9,10 @@ import {  Component,OnInit } from '@angular/core';
 })
 export class MapaPage implements OnInit {
 
-  constructor() {
+  constructor() {}
 
-  
-  
+  ngOnInit(){
+    
   }
 
 }
